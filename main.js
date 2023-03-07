@@ -64,7 +64,9 @@ function displayByName() {
   for (let i = 0; i < contacts.length; i++) {
     if (contacts[i].includes(inputName)) {
       getContactHTMLStr(contacts[i], i);
-    }
+    } else {
+      alert("Name not found");
+    } 
   }
 }
 
